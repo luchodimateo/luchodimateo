@@ -10,12 +10,17 @@
     padding: 10px;
     font-size: 30%;
     color: rgb(95, 93, 93);
-    
 }
 .nav{
     background-color: rgb(155, 151, 151);
     display: flex;
     justify-content: center;
+    font-size: 2px;
+}
+a{border-left: solid; 
+}
+a:hover{
+    transform: scale(1.2);
 }
 .menu{
     color: rgba(79, 89, 95, 0.966);
@@ -23,10 +28,11 @@
     margin: 10px;
     display: inline-block;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 15px;
 }
 .menu:hover{
     background: rgba(79, 89, 95, 0.26);
+    
 }
 .producto:hover{
     transform: scale(1.1);
@@ -40,12 +46,6 @@
     text-align: center;
     border: solid 1px grey;  
 }
-.h3{
-    background-color: rgb(223, 221, 221);
-    text-align: center;
-    border: solid 1px;
-    margin-left: 15%;
-}
 #logo img{ 
     height: 60%;
     width: 100%;
@@ -55,18 +55,19 @@
     grid-area: logo;
 }
 .nosotros{
-    color: grey;
-    background-color:rgb(223, 221, 221);
+    color: rgba(79, 89, 95, 0.966);
+    background-color:rgb(155, 151, 151);
     font-size: 20px;
     margin: 20px;
     padding: 15px;
 }
+.nosotros:hover{
+    background-color:rgba(79, 89, 95, 0.26) ;
+}
 .producto{
     width: 35%;
-    border-radius: 50% ;
-    border: 1px solid grey;
-    
-}
+    border-radius: 30% 10px ;
+    }
 .derechos{
     color: grey;
     text-align: center;
@@ -75,15 +76,11 @@
     grid-area: derechos;  
 }
 .main{
-   background-color: rgb(223, 221, 221);
     justify-content: space-around;
     align-items: center;
-    border: solid 1px grey;
     display: flex;
     grid-area: main;
-
-}
-    
+} 
 #index{
         display: grid;
         height: 80vh;
@@ -145,8 +142,7 @@
     padding: 5px;
     margin: 10px;
     display: inline-block;
-    text-decoration: none;
-    font-size: 20px;
+    text-decoration: none;  
 }
 .titulo{
     color: grey;
@@ -156,12 +152,10 @@
     text-align: center;
     margin: 15px;
     padding: 15px;
-
-    
     animation-name: scale;
     animation-iteration-count: infinite;
-    animation-duration: 5s;}
-    
+    animation-duration: 5s;
+}
     @keyframes scale {
         from {
             transform: scale(1.0);
@@ -170,9 +164,6 @@
             transform: scale(1.1);
         }
     }
-
-
-
 #index{
     display: grid;
     height: 80vh;
